@@ -5,11 +5,17 @@
     */
 
     //ENTRADA
-
+const numeroInt = Number(prompt(`Informe um número inteiro`));
 
     //PROCESSAMENTO
-
-
+    const numeroInicial = numeroInt
+function calculofatorial(numeroInteiro){
+    for(let i = 1; i < numeroInicial; i++){
+       numeroInteiro = numeroInteiro*i 
+    }
+    return numeroInteiro
+}
+const numerofatorial = calculofatorial(numeroInt)
     //SAÍDA
-
+alert(`Seu numero fatoria resulta em ${numerofatorial}`)
 </script>

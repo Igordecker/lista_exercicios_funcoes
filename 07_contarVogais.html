@@ -7,11 +7,23 @@
     */
 
     //ENTRADA
-
+    let palavra = prompt(`Informe uma palavra:`).toLowerCase().trim();
 
     //PROCESSAMENTO
+    function contador(p) {
+        let quant = 0;
+        const vogais = ["a","e","i","o","u"];
 
+        for (let caractere of p) {
+            if (vogais.includes(caractere)) {
+                quant++;
+            }
+        }
+
+        alert(`A palavra "${p}" possui ${quant} vogais`);
+    }
 
     //SAÍDA
+    contador(palavra);
 
 </script>

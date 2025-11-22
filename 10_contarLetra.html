@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
-
+const frase = prompt(`Informe a frase que deseja saber quantas fazes a palavra a aparece`)
 
     //PROCESSAMENTO
-
-
+    let quantidadedea = 0;
+function contaA(frasequedevesercontada){
+for(caracteres of frasequedevesercontada){
+    if(caracteres=="a"||caracteres=="A"){
+        quantidadedea++
+    }
+}
+return quantidadedea
+}
+const quantidadeas = contaA(frase)
     //SAÍDA
-
+alert(`A quantidade de a que apararece na sua frase é ${quantidadeas}`)
 </script>
