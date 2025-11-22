@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
-
+const base = Number(prompt(`Informe o valor da base do triângulo em cm.`))
+const altura = Number(prompt(`Informe o valor da altura do triângulo em cm`))
     //PROCESSAMENTO
-
-
+let areatriangulo;
+function formulaareatriangulo(basetriangulo, alturatriangulo){
+areatriangulo = (basetriangulo * alturatriangulo) / 2;
+return areatriangulo
+};
+const areadotriangulo = formulaareatriangulo(base, altura)
     //SAÍDA
-
+alert(`A área do seu triângulo é ${areadotriangulo}`)
 </script>
